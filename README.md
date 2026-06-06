@@ -8,7 +8,7 @@ This service provides read-only access to deployment event data via REST endpoin
 
 ## Requirements
 
-- **Java 21** or higher
+- **Java 17** or higher
 - **Maven 3.6+**
 
 ## Quick Start
@@ -139,7 +139,7 @@ The application seeds the database with:
 ## Technology Stack
 
 - Spring Boot 3.3.0
-- Java 21
+- Java 17
 - Spring Data JPA
 - H2 In-Memory Database
 - Lombok
