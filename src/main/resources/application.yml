@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: deployment-tracker
+  datasource:
+    url: jdbc:h2:mem:deploydb
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+  h2:
+    console:
+      enabled: false
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
